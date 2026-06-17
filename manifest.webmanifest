@@ -1,0 +1,14 @@
+{
+  "name": "Planificador 2026",
+  "short_name": "Planificador",
+  "description": "Tu centro de mando: SaaS, música, gimnasio, universidad, hábitos y finanzas.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0c0c0f",
+  "theme_color": "#0c0c0f",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
