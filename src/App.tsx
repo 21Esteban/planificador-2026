@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { useTheme } from "@/lib/theme"
 import { StoreProvider, useStore } from "@/lib/store"
+import { SyncDialog } from "@/components/sync-dialog"
 import { isoNow } from "@/lib/data"
 import type { State } from "@/lib/types"
 import { Dashboard } from "@/views/dashboard"
@@ -77,6 +78,7 @@ function Shell() {
           )
         })}
         <div className="flex-1" />
+        <div className="mb-2"><SyncDialog /></div>
         <div className="grid grid-cols-2 gap-2">
           <Button variant="outline" size="sm" onClick={toggle}>{theme === "dark" ? <Sun /> : <Moon />} Tema</Button>
           <Button variant="outline" size="sm" onClick={exportJson}><Download /> Export</Button>
